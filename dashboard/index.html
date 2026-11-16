@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FIELDNOTE / Token Radar</title><link rel="stylesheet" href="app.css"></head>
+<body>
+<header><a class="brand" href="index.html">F / FIELDNOTE</a><span>RESEARCH TERMINAL &nbsp; / &nbsp; 02</span><span id="date"></span></header>
+<main>
+<section class="intro"><div><p class="eyebrow">THE PRE-TOKEN OBSERVATORY</p><h1>Find the signal.<br><em>Price the uncertainty.</em></h1><p>Protocols that record no token, ranked by a snapshot-calibrated value.<br>A research queue for your next decision, not a promise of a launch.</p></div><aside class="edition"><span>SEALED SNAPSHOT</span><strong>198</strong><span>protocols in the field</span><p>40 watchlist / 138 below floor<br>20 documented additional inclusions</p></aside></section>
+<nav><button class="active" id="boardTab">01 / Opportunity board</button><button id="researchTab">02 / Research &amp; validation</button><span>NO LIVE FEED. NO IMPLIED REWARDS.</span></nav>
+<section id="boardView">
+<div class="filters"><label>SEARCH<input id="search" placeholder="Protocol or slug..."></label><label>CATEGORY<select id="category"><option value="">All categories</option></select></label><label>CHAIN<select id="chain"><option value="">All chains</option></select></label><label>COHORT<select id="cohort"><option value="">Entire field</option><option>Watchlist</option><option>Below floor</option><option>Additional inclusion</option></select></label><button id="reset">Reset filters</button></div>
+<div class="tableheading"><h2>Opportunity board</h2><span id="count" aria-live="polite"></span><span>Click a protocol for its field notes &rarr;</span></div>
+<div class="tablewrap"><table><thead><tr><th><button data-sort="rank">#</button></th><th><button data-sort="name">Protocol</button></th><th><button data-sort="category">Category</button></th><th>Chain</th><th><button data-sort="tvl_usd">TVL</button></th><th><button data-sort="implied_value_usd">Implied value</button></th><th><button data-sort="change_7d">7d TVL</button></th><th>Action</th></tr></thead><tbody id="rows"></tbody></table><p id="empty" hidden>No matching protocols. Clear a filter to widen the field.</p></div>
+<div class="footnote"><b>Model risk, quantified.</b><span id="risk"></span><button id="readResearch">Read methodology &rarr;</button></div>
+</section>
+<section id="researchView" hidden><div class="researchtitle"><p class="eyebrow">RESEARCH NOTE / 14 NOV 2026</p><h2>A size curve, with honest limits.</h2></div><div id="research"></div></section>
+</main>
+<dialog id="detail"><div id="detailContent"></div><button id="closeDetail" aria-label="Close protocol details">Close / Esc</button></dialog>
+<footer>FIELDNOTE / SNAPSHOT RESEARCH <span>Implied market cap is our model's claim. Not FDV, proceeds, or your allocation.</span></footer>
+<script src="../data.js"></script><script src="app.js"></script>
+</body></html>
